@@ -1,4 +1,6 @@
+# pip install pytube
 import pytube
+
 url = input("Enter Your YouTube link...\n")
 video = pytube.YouTube(url)
 stream = video.streams.get_by_itag(22)
